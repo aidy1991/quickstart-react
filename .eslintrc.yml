@@ -1,0 +1,41 @@
+---
+root: true
+
+env:
+  browser: true
+  es6: true
+
+parser: babel-eslint
+
+extends:
+  - airbnb
+
+rules:
+  arrow-parens:
+    - error
+    - always
+  max-len: off
+  no-console: off
+  import/prefer-default-export: off
+  no-plusplus: off
+  no-constant-condition: off
+  jsx-a11y/no-static-element-interactions: off
+  function-paren-newline: off
+  prefer-destructuring: off
+  object-curly-newline: off
+  prefer-promise-reject-errors: off
+  no-restricted-globals: off
+  jsx-a11y/click-events-have-key-events: off
+  jsx-a11y/anchor-is-valid: ["error", {
+    components: [ "Link" ],
+    specialLink: [ "to", "hrefLeft", "hrefRight" ],
+    aspects: [ "noHref", "invalidHref", "preferButton" ]
+  }]
+  comma-dangle:
+    - error
+    -
+      arrays: always-multiline
+      objects: always-multiline
+      imports: always-multiline
+      exports: always-multiline
+      functions: never

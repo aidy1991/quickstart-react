@@ -1,0 +1,9 @@
+/log/*
+/tmp/*
+!/log/.gitkeep
+!/tmp/.gitkeep
+
+/node_modules
+/dist
+/yarn-error.log
+/config.json
